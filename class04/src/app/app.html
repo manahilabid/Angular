@@ -1,0 +1,11 @@
+<h1>class04</h1>
+<h3>interpolation<p>{{name}}</p></h3>
+<h3>Property binding</h3>
+<input type="text"[value]="message">
+<h3>Event binding</h3>
+<input type="text" #txt (keyup)="ChangeData(txt.value)">
+<p>{{text}}</p>
+<button (click)="UpdateData()">Update text</button>
+<h3>Two way data binding</h3>
+<input [(ngModel)]="language">
+{{language}}
